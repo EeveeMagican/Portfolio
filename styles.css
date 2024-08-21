@@ -220,12 +220,16 @@ nav {
 
 /* PROJECTS */
 
+.project {
+    margin-bottom: 135px;
+}
+
 .project__img {
     width: 100%;
     transition: all 500ms ease;
 }
 
-.projects__wrapper {
+.project__wrapper {
     display: flex;
     box-shadow: 0 20px 80px rgba(0,0,0,0.45);
     border-radius: 20px;
@@ -233,7 +237,7 @@ nav {
     position: relative;
 }
 
-.project__wraper:before {
+.project__wrapper:before {
     content: "";
     position: absolute;
     top: 0;
