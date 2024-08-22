@@ -72,7 +72,7 @@ li {
 }
 
 .container {
-    padding: 0;
+    padding: 50px 0;
 }
 
 .row {
@@ -114,7 +114,7 @@ nav {
 .nav__link--anchor {
     margin: 0 12px;
     color: #242424;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-weight: 700;
 }
 
@@ -135,7 +135,7 @@ nav {
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
-    padding: 0 6px;
+    /* padding: 0 6px; */
 }
 /* END NAVIGATION */
 
@@ -194,18 +194,22 @@ nav {
 .about-me__info--title {
     margin-bottom: 16px;
     animation: fade-up 650ms 400ms backwards;
+    /* align-items: center;
+    justify-content: center;
+    display: flex;  */
 }
 
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 28px;
-    animation: fade-up 650ms 400ms backwards;
+    animation: fade-up 650ms 400ms backwards; 
+    /* might be 600ms inst of 400 */
 }
 
 .about-me__link {
     font-size: 20px;
     color: #6030b1;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 0 16px;
     
 }
@@ -215,18 +219,18 @@ nav {
 }
 
 @keyframes fade-up {
-    0 {
+    0% {
         opacity:0;
-        transform: translateY (40px);
+        transform: translateY(40px);
     }
     100% {
         opacity: 1;
-        transform: translateY(p);
+        transform: translateY(0);
     }
 }
 
 .about-me__img-container {
-    padding: 24px;
+    /* padding: 24px; */
     flex: 1;
     display: flex;
     align-items: center;
@@ -237,7 +241,7 @@ nav {
     animation: fade-in 1200ms 800ms backwards;
 }
 
-@keyframes {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -298,10 +302,6 @@ nav {
     flex-wrap: wrap;
 }
 
-.language__list {
-
-}
-
 .language__name {
     position: absolute;
     bottom: 0;
@@ -350,9 +350,11 @@ nav {
     opacity: 0;
     transition: opacity 450ms ease;
     z-index: 2;
+    transform: translateY(100%);
 }
 
 .project:hover .project__wrapper:before {
+    transform: translateY(0);
     opacity: 0.7;
 }
 
@@ -392,7 +394,7 @@ nav {
 .project__description--link {
     font-size: 20px;
     margin-right: 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .project__description--title, 
@@ -458,7 +460,7 @@ footer {
 /* MEDIA */ 
 /* Small phones, tablets, large smartphones */
 
-@media (max-width: 768px;) {
+@media (max-width: 768px) {
     nav {
         height: 68px;
     }
@@ -490,6 +492,10 @@ footer {
     .nav__link:not(:last-child) {
         display: none;
     }
+
+    /* .project__wrapper {
+        border-radius: 0;
+    } */
 
     .project__description {
         padding: 0;
