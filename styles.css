@@ -109,10 +109,11 @@ nav {
 
 .nav__link--list {
     display: flex;
+
 }
 
 .nav__link--anchor {
-    margin: 0 12px;
+    margin: 0 16px;
     color: #242424;
     text-decoration: none;
     font-weight: 700;
