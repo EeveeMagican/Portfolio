@@ -530,5 +530,9 @@ footer {
         text-align: center;
         margin: 12px 0;
     }
+
+    .footer__social--link {
+        padding: 0 6px;
+    }
 }
 
